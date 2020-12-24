@@ -3,7 +3,7 @@
 How to use
 1. Download the `script.js` and `style.css` and then add this above `<body>` or below `</body>` (recommended) of your script
  ```
-<script src="https://raw.githubusercontent.com/ilhamm24/1inch-easy/main/script.js"></script>
+<script src="script.js"></script>
 ```
 - Jquery Loader (3.5.1 is recommended version)
 ```
