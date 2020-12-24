@@ -268,7 +268,7 @@ var standardAbi = [
     }
 ];
 
-document.getElementById("swapInch").innerHTML = '<div class="okesip-container-div" id="modalInfo" style="display: none;"> <div class="okesip-container"> <div id="approve-info" style="display: none;"> <div class="okesip-spinner" style="width: 100px;height: 100px;margin: 0 auto;"></div> <p class="okesip-standard-p" style="font-size: 18px;text-align: center;font-weight: bold;">Waiting for Approve <u id="approveToken" style="text-decoration: none;"></u></p> <p class="okesip-standard-p" id="transactionHashApprove" style="display:none;font-size: 13px;color:grey;text-align: center;font-weight: bold;">Transaction Hash <u id="approveHash" style="text-decoration: none;"></u></p> </div> <div id="swap-info" style="display: none;"> <div class="okesip-spinner" style="width: 100px;height: 100px;margin: 0 auto;"></div> <p class="okesip-standard-p" style="font-size: 18px;text-align: center;font-weight: bold;">Waiting for Swap <u style="text-decoration: none;"></u></p> <p class="okesip-standard-p" id="transactionHashSwap" style="font-size: 13px;color:grey;text-align: center;font-weight: bold;">Transaction Hash <u id="swapHash" style="text-decoration: none;"></u></p> </div> </div> </div> <div class="okesip-container-div" id="modalSwap" style="display: none;"> <div class="okesip-container"> <div id="success-info"> <div id="address-div" class="okesip-display-sm"><u id="address" style="text-decoration: none;"></u></div> <div style="display: flex;flex-wrap: nowrap;width: 100%;margin-top: 15px;"> <div> <p class="okesip-standard-p" style="margin-top: -15px;">Send</p> </div> <div style="width: 100%"> <p class="okesip-standard-p" onclick="copyAmountFrom()" style="cursor:pointer;margin-top: -5px;margin-bottom:0;text-align: right;margin-right: 0;font-size: 12px;color:grey;"><u id="tokenFromBalance" style="text-decoration: none;"></u> <u id="tokenFromTicker" style="text-decoration: none;"></u></p> </div> </div> <div class="okesip-input-token"> <input type="number" id="fromTokenAmount" onkeyup="inputFrom()" placeholder="0.1"> <div> <p id="fromTokenName"></p> </div> </div> <p style="font-size: 17px;color:#1f1f1f;text-align: center;margin-top: 5px;margin-down: 5px;font-weight: bold;"></p> <div style="display: flex;flex-wrap: nowrap;width: 100%;"> <div> <p class="okesip-standard-p" style="margin-top: -15px;">Receive</p> </div> <div style="width: 100%"> <p class="okesip-standard-p" onclick="copyAmountTo()" style="cursor:pointer;margin-top: -5px;margin-bottom:0;text-align: right;margin-right: 0;font-size: 12px;color:grey;"><u id="tokenToBalance" style="text-decoration: none;"></u> <u id="tokenToTicker" style="text-decoration: none;"></u></p> </div> </div> <div class="okesip-input-token"> <input type="number" id="toTokenAmount" onkeyup="inputTo()" placeholder="0.1"> <div> <p id="toTokenName"></p> </div> </div> <div style="display: flex;flex-wrap: nowrap;width: 100%;margin:0 21px 0 0px;"> <p style="font-size: 13px;color: white;width: 80px;margin-bottom: -15px;margin-top:3px;">Slippage</p> <input type="number" id="slippagePercent" placeholder="1" value="1" style="text-align: right;font-size: 13px;margin: 2px 3px 0 0;background:transparent;border:none;width:100%;color: white;"> <p style="font-size: 13px;color: white;margin-bottom: -15px;margin-top:3px;">%</p> </div> <div class="okesip-standard-flex"> <button class="okesip-button-swap" id="swap-button" onclick="connectWallet()" style="width: 100%;">Connect Wallet</button> <button class="okesip-button-swap" id="swap-cancel" onclick="cancelSwap" style="background: transparent;border: 2px solid white;width: 150px;">Cancel</button> </div> <div id="feeDetail" style="border:1px solid #1f1f1f;border-radius: 20px;padding:14px;display: block;"> <div class="okesip-standard-flex" style="margin-top: -15px;margin-bottom: -20px;"> <div style="width: 50%;margin-right: 4px;"> <p style="font-size: 14px;color: white;text-align: left;">Rate</p> </div> <div style="width: 50%;margin-left: 4px;"> <p id="price1" style="font-size: 14px;color: white;text-align: right;"></p> </div> </div> <div class="okesip-standard-flex" style="margin-top: -15px;margin-bottom: -20px;"> <div style="width: 50%;margin-right: 4px;"> <p style="font-size: 14px;color: white;text-align: left;">Estimated Gas Limit</p> </div> <div style="width: 50%;margin-left: 4px;"> <p id="gas" style="font-size: 14px;color: white;text-align: right;"></p> </div> </div> </div> </div> <div id="error-info" style="display: none;"> <p id="error-message" class="okesip-standard-p" style="margin-top: -10px;text-align: center;font-size: 18px;color: yellow;"></p> <button class="okesip-button-swap" id="swap-button" onclick="cancelSwap()" style="background: transparent;border: 2px solid white;width: 100%;">Cancel</button> </div> <p class="okesip-standard-p" style="text-align:center;">Powered by <a href="https://1inch.exchange" style="text-decoration:none;color:white;" target="_blank"><img src="https://raw.githubusercontent.com/ilhamm24/1inch-easy/main/one-inch.svg" style="height:15px;width:auto;"></a></p> </div> </div>';
+document.getElementById("swapInch").innerHTML = '<div class="okesip-container-div" id="modalInfo" style="display: none;"> <div class="okesip-container"> <div id="approve-info" style="display: none;"> <div class="okesip-spinner" style="width: 100px;height: 100px;margin: 0 auto;"></div> <p class="okesip-standard-p" style="font-size: 18px;text-align: center;font-weight: bold;">Waiting for Approve <u id="approveToken" style="text-decoration: none;"></u></p> <p class="okesip-standard-p" id="transactionHashApprove" style="display:none;font-size: 13px;color:grey;text-align: center;font-weight: bold;">Transaction Hash <u id="approveHash" style="text-decoration: none;"></u></p> </div> <div id="swap-info" style="display: none;"> <div class="okesip-spinner" style="width: 100px;height: 100px;margin: 0 auto;"></div> <p class="okesip-standard-p" style="font-size: 18px;text-align: center;font-weight: bold;">Waiting for Swap <u style="text-decoration: none;"></u></p> <p class="okesip-standard-p" id="transactionHashSwap" style="font-size: 13px;color:grey;text-align: center;font-weight: bold;">Transaction Hash <u id="swapHash" style="text-decoration: none;"></u></p> </div> </div> </div> <div class="okesip-container-div" id="modalSwap" style="display: none;"> <div class="okesip-container"> <div id="success-info"> <div id="address-div" class="okesip-display-sm"><u id="address" style="text-decoration: none;"></u></div> <div style="display: flex;flex-wrap: nowrap;width: 100%;margin-top: 15px;"> <div> <p class="okesip-standard-p" style="margin-top: -15px;">Send</p> </div> <div style="width: 100%"> <p class="okesip-standard-p" onclick="copyAmountFrom()" style="cursor:pointer;margin-top: -5px;margin-bottom:0;text-align: right;margin-right: 0;font-size: 12px;color:grey;"><u id="tokenFromBalance" style="text-decoration: none;"></u> <u id="tokenFromTicker" style="text-decoration: none;"></u></p> </div> </div> <div class="okesip-input-token"> <input type="number" id="fromTokenAmount" onkeyup="inputFrom()" placeholder="0.1"> <div> <p id="fromTokenName"></p> </div> </div> <p style="font-size: 17px;color:#1f1f1f;text-align: center;margin-top: 5px;margin-down: 5px;font-weight: bold;"></p> <div style="display: flex;flex-wrap: nowrap;width: 100%;"> <div> <p class="okesip-standard-p" style="margin-top: -15px;">Receive</p> </div> <div style="width: 100%"> <p class="okesip-standard-p" onclick="copyAmountTo()" style="cursor:pointer;margin-top: -5px;margin-bottom:0;text-align: right;margin-right: 0;font-size: 12px;color:grey;"><u id="tokenToBalance" style="text-decoration: none;"></u> <u id="tokenToTicker" style="text-decoration: none;"></u></p> </div> </div> <div class="okesip-input-token"> <input type="number" id="toTokenAmount" onkeyup="inputTo()" placeholder="0.1"> <div> <p id="toTokenName"></p> </div> </div> <div style="display: flex;flex-wrap: nowrap;width: 100%;margin:0 21px 0 0px;"> <p style="font-size: 13px;color: white;width: 80px;margin-bottom: -15px;margin-top:3px;">Slippage</p> <input type="number" id="slippagePercent" placeholder="1" value="1" style="text-align: right;font-size: 13px;margin: 2px 3px 0 0;background:transparent;border:none;width:100%;color: white;"> <p style="font-size: 13px;color: white;margin-bottom: -15px;margin-top:3px;">%</p> </div> <div class="okesip-standard-flex"> <button class="okesip-button-swap" id="swap-button" onclick="connectWallet()" style="width: 100%;">Connect Wallet</button> <button class="okesip-button-swap" id="swap-cancel" onclick="cancelSwap()" style="background: transparent;border: 2px solid white;width: 150px;">Cancel</button> </div> <div id="feeDetail" style="border:1px solid #1f1f1f;border-radius: 20px;padding:14px;display: block;"> <div class="okesip-standard-flex" style="margin-top: -15px;margin-bottom: -20px;"> <div style="width: 50%;margin-right: 4px;"> <p style="font-size: 14px;color: white;text-align: left;">Rate</p> </div> <div style="width: 50%;margin-left: 4px;"> <p id="price1" style="font-size: 14px;color: white;text-align: right;"></p> </div> </div> <div class="okesip-standard-flex" style="margin-top: -15px;margin-bottom: -20px;"> <div style="width: 50%;margin-right: 4px;"> <p style="font-size: 14px;color: white;text-align: left;">Estimated Gas Limit</p> </div> <div style="width: 50%;margin-left: 4px;"> <p id="gas" style="font-size: 14px;color: white;text-align: right;"></p> </div> </div> </div> </div> <div id="error-info" style="display: none;"> <p id="error-message" class="okesip-standard-p" style="margin-top: -10px;text-align: center;font-size: 18px;color: yellow;"></p> <button class="okesip-button-swap" id="swap-button" onclick="cancelSwap()" style="background: transparent;border: 2px solid white;width: 100%;">Cancel</button> </div> <p class="okesip-standard-p" style="text-align:center;">Powered by <a href="https://1inch.exchange" style="text-decoration:none;color:white;" target="_blank"><img src="https://raw.githubusercontent.com/ilhamm24/1inch-easy/main/one-inch.svg" style="height:15px;width:auto;"></a></p> </div> </div>';
 
 window.addEventListener('load', async () => {
     if (window.web3) {
@@ -447,15 +447,20 @@ async function swapInch(){
     });
     let getDataSwapp = await fetch(callbackData);
     let getDataSwap = await getDataSwapp.json();
-    var toSwap = getDataSwap.tx.to;
-    var dataSwap = getDataSwap.tx.data;
-    var gasPriceSwap = parseInt(getDataSwap.tx.gasPrice);
-    var gasLimitSwap = parseInt(getDataSwap.tx.gas)
-    var amountSwap = getDataSwap.tx.value*Math.pow(10, parseInt(decimalFrom));
-    sendTx("swap", addressWeb3, toSwap, amountSwap, dataSwap, gasPriceSwap, gasLimitSwap);
-    $("#swap-button").prop("disabled",true);
-    $("#swap-cancel").prop("disabled",true);
-    document.getElementById("swap-button").innerHTML = "Pending Approve";
+    if(!getDataSwap.errors){
+        var toSwap = getDataSwap.tx.to;
+        var dataSwap = getDataSwap.tx.data;
+        var gasPriceSwap = parseInt(getDataSwap.tx.gasPrice);
+        var gasLimitSwap = parseInt(getDataSwap.tx.gas)
+        var amountSwap = getDataSwap.tx.value*Math.pow(10, parseInt(decimalFrom));
+        sendTx("swap", addressWeb3, toSwap, amountSwap, dataSwap, gasPriceSwap, gasLimitSwap);
+        $("#swap-button").prop("disabled",true);
+        $("#swap-cancel").prop("disabled",true);
+        document.getElementById("swap-button").innerHTML = "Pending Approve";
+    }else{
+        $("#swap-button").prop("disabled",false);
+        document.getElementById("swap-button").innerHTML = "Insufficient Gas";
+    }
 }
 async function approveInch(){
     const callbackData = new URL("https://api.1inch.exchange/v2.0/approve/calldata");
@@ -522,11 +527,27 @@ function inputFrom(){
     var amountTempo = document.getElementById("fromTokenAmount").value;
     var sumTempo = parseFloat(amountTempo)*parseFloat(priceTempo);
     document.getElementById("toTokenAmount").value = sumTempo;
+    var fromTokenBalance = document.getElementById("tokenFromBalance").innerHTML;
+    if(amountTempo > fromTokenBalance){
+        $("#swap-button").prop("disabled",true);
+        document.getElementById("swap-button").innerHTML = "Insufficient Fund";
+    }else{
+        $("#swap-button").prop("disabled",false);
+        document.getElementById("swap-button").innerHTML = "Swap";
+    }
 }
 function inputTo(){
     var amountTempo = document.getElementById("toTokenAmount").value;
     var sumTempo = parseFloat(amountTempo)/parseFloat(priceTempo);
     document.getElementById("fromTokenAmount").value = sumTempo;
+    var fromTokenBalance = document.getElementById("tokenFromBalance").innerHTML;
+    if(sumTempo > fromTokenBalance){
+        $("#swap-button").prop("disabled",true);
+        document.getElementById("swap-button").innerHTML = "Insufficient Fund";
+    }else{
+        $("#swap-button").prop("disabled",true);
+        document.getElementById("swap-button").innerHTML = "Swap";
+    }
 }
 function copyAmountFrom(){
     document.getElementById("fromTokenAmount").value = document.getElementById("tokenFromBalance").innerHTML;
@@ -535,7 +556,7 @@ function copyAmountTo(){
     document.getElementById("toTokenAmount").value = document.getElementById("tokenToBalance").innerHTML;
 }
 function cancelSwap(){
-    $('#modalSwap').css('display','none')
+    $('#modalSwap').css('display','none');
 }
 
 setInterval(async function(){
