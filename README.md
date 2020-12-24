@@ -7,7 +7,7 @@ How to use
 ```
 - Jquery Loader (3.5.1 is recommended version)
 ```
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
 ```
 - Web3
 ```
