@@ -11,7 +11,7 @@ How to use
 ```
 - Web3
 ```
-<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.34/dist/web3.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.3.1/dist/web3.min.js"></script>
 ```
 2. Add thid css above `<body` of your script to make 'style' of the widget
 ```
