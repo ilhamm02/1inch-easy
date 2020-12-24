@@ -436,7 +436,7 @@ async function swapInch(){
     var amountFrom = document.getElementById("fromTokenAmount").value*Math.pow(10, parseFloat(decimalFrom));
     var fromTokenAddressSwap = document.getElementById("fromTokenName").getAttribute("name");
     var toTokenAddressSwap = document.getElementById("toTokenName").getAttribute("name");
-    var amountSwap = document.getElementById("fromTokenAmount").value*Math.pow(10, parseInt(decimalFrom));
+    var amountSwap = parseFloat(document.getElementById("fromTokenAmount").value)*Math.pow(10, parseInt(decimalFrom));
     var slippageSwap = document.getElementById("slippagePercent").value;
     callbackData.search = new URLSearchParams({
         fromTokenAddress : fromTokenAddressSwap,
@@ -451,12 +451,12 @@ async function swapInch(){
         var toSwap = getDataSwap.tx.to;
         var dataSwap = getDataSwap.tx.data;
         var gasPriceSwap = parseInt(getDataSwap.tx.gasPrice);
-        var gasLimitSwap = parseInt(getDataSwap.tx.gas)
-        var amountSwap = getDataSwap.tx.value*Math.pow(10, parseInt(decimalFrom));
+        var gasLimitSwap = parseInt(getDataSwap.tx.gas);
+        var amountSwap = parseFloat(getDataSwap.tx.value).toFixed(16);
         sendTx("swap", addressWeb3, toSwap, amountSwap, dataSwap, gasPriceSwap, gasLimitSwap);
         $("#swap-button").prop("disabled",true);
         $("#swap-cancel").prop("disabled",true);
-        document.getElementById("swap-button").innerHTML = "Pending Approve";
+        document.getElementById("swap-button").innerHTML = "Pending Swap";
     }else{
         $("#swap-button").prop("disabled",false);
         document.getElementById("swap-button").innerHTML = "Insufficient Gas";
