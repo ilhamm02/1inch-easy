@@ -2,31 +2,6 @@
 html {
     scroll-behavior: smooth;
 }
-body{
-    font-family: 'Nunito', sans-serif;
-    overflow-x:hidden;
-    margin-top:55px;
-    background: #252525;
-    height:inherit;
-    padding: 0 5px 0px 5px;
-}
-.header-home{
-	height:55px;
-	width:100%;
-	background : transparent;
-	position:absolute;
-	top:0;
-	margin-top: 0;
-	right:0;
-	z-index:5;
-	font-family:'Nunito', sans-serif;
-	color:white;
-}
-.header-title{
-	text-align:center;
-	font-size:25px;
-	margin-top:8px;
-}
 input:focus, input:hover, button:focus, button:hover{
 	outline: none;
 }
@@ -59,6 +34,7 @@ input::-webkit-inner-spin-button {
 	top:0;
 	right: 0;
 	z-index: 50;
+	font-family: 'Nunito', sans-serif;
 }
 .okesip-container{
 	background: #1d3557;
